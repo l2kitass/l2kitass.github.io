@@ -1,1 +1,220 @@
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;background:#0b1020;color:#e8ecf4;line-height:1.6}.container{width:min(100% - 40px,1000px);margin:auto}header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.95);border-bottom:1px solid #26304a}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.nav strong{font-size:20px}.nav a{color:#b9c2d8;text-decoration:none;margin-left:18px}.nav a:hover{color:#fff}.hero{padding:110px 0 90px}.tag{color:#8fa4ff;font-size:13px;font-weight:bold;letter-spacing:2px;margin-bottom:15px}h1{font-size:clamp(42px,8vw,76px);line-height:1.05;margin-bottom:20px}h1 span{color:#8fa4ff}.subtitle{max-width:650px;font-size:21px;color:#b9c2d8;margin-bottom:30px}.button{display:inline-block;padding:12px 20px;border-radius:8px;background:#8fa4ff;color:#0b1020;text-decoration:none;font-weight:bold}.section{padding:70px 0;border-top:1px solid #26304a}h2{font-size:32px;margin-bottom:25px}h3{font-size:22px;margin-bottom:10px}.section p{max-width:760px;color:#c4ccdc;margin-bottom:14px}.card{background:#141b2f;border:1px solid #26304a;border-radius:14px;padding:25px}.note{font-size:13px;color:#8f9ab2!important}.skills{display:flex;flex-wrap:wrap;gap:10px}.skills span{padding:9px 14px;border:1px solid #34405f;border-radius:999px;color:#cbd3e4;background:#141b2f}a{color:#9db0ff}footer{text-align:center;padding:30px 20px;border-top:1px solid #26304a;color:#8f9ab2}@media(max-width:700px){.nav{flex-direction:column;justify-content:center;padding:15px 0}.nav a{margin:0 7px;font-size:14px}.hero{padding:80px 0 60px}}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080d1a;
+  color: #f1f5ff;
+  line-height: 1.7;
+}
+
+.container {
+  width: min(90%, 1050px);
+  margin: auto;
+}
+
+/* MENU */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8, 13, 26, 0.96);
+  border-bottom: 1px solid #25304a;
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav strong {
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.nav a {
+  color: #aebbd4;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #6ea8ff;
+}
+
+/* INÍCIO */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.tag {
+  color: #6ea8ff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 80px);
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+h1 span {
+  color: #6ea8ff;
+}
+
+.subtitle {
+  max-width: 700px;
+  font-size: 21px;
+  color: #aebbd4;
+  margin-bottom: 35px;
+}
+
+/* BOTÃO */
+.button {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 8px;
+  background: #6ea8ff;
+  color: #080d1a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(110, 168, 255, 0.25);
+}
+
+/* SEÇÕES */
+.section {
+  padding: 85px 0;
+  border-top: 1px solid #25304a;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 23px;
+  margin-bottom: 12px;
+  color: #6ea8ff;
+}
+
+.section p {
+  max-width: 800px;
+  color: #c0cadc;
+  margin-bottom: 16px;
+}
+
+/* EXPERIÊNCIA */
+.card {
+  background: #111a2e;
+  border: 1px solid #283653;
+  border-radius: 16px;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #6ea8ff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* HABILIDADES */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  padding: 10px 17px;
+  border: 1px solid #344566;
+  border-radius: 999px;
+  color: #d6deed;
+  background: #111a2e;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #6ea8ff;
+  color: #080d1a;
+  border-color: #6ea8ff;
+  transform: translateY(-2px);
+}
+
+a {
+  color: #6ea8ff;
+}
+
+a:hover {
+  color: #9bc2ff;
+}
+
+/* CONTATO */
+#contato p {
+  margin-bottom: 10px;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #25304a;
+  color: #8996ad;
+  background: #060a14;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px 0;
+  }
+
+  .nav a {
+    margin: 0 7px;
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
